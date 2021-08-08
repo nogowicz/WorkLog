@@ -16,14 +16,14 @@
             xmlns:fx="http://javafx.com/fxml">
     <top>
         <VBox>
-            <MenuBar>
-                <Menu text="File">
-                    <items>
-                        <MenuItem text="New Log" onAction="#showNewItemDialog"/>
-                        <MenuItem text="Exit" onAction="#exitApp"/>
-                    </items>
-                </Menu>
-            </MenuBar>
+<!--            <MenuBar>-->
+<!--                <Menu text="File">-->
+<!--                    <items>-->
+<!--                        <MenuItem text="New Log" onAction="#showNewItemDialog"/>-->
+<!--                        <MenuItem text="Exit" onAction="#exitApp"/>-->
+<!--                    </items>-->
+<!--                </Menu>-->
+<!--            </MenuBar>-->
             <ToolBar>
                 <HBox>
                     <Button onAction="#showNewItemDialog">
@@ -31,8 +31,8 @@
                             <Tooltip text="Add a new Work Log"/>
                         </tooltip>
                         <graphic>
-                            <ImageView>
-                                <Image url="@/toolbarButtonGraphics/general/New24.gif"/>
+                            <ImageView fitHeight="15" fitWidth="15">
+                                <Image url="https://img.icons8.com/ios/50/000000/create-new.png"/>
                             </ImageView>
                         </graphic>
                     </Button>
