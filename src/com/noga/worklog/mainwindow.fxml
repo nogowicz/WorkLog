@@ -16,28 +16,15 @@
             xmlns:fx="http://javafx.com/fxml">
     <top>
         <VBox>
-<!--            <MenuBar>-->
-<!--                <Menu text="File">-->
-<!--                    <items>-->
-<!--                        <MenuItem text="New Log" onAction="#showNewItemDialog"/>-->
-<!--                        <MenuItem text="Exit" onAction="#exitApp"/>-->
-<!--                    </items>-->
-<!--                </Menu>-->
-<!--            </MenuBar>-->
-            <ToolBar>
-                <HBox>
-                    <Button onAction="#showNewItemDialog">
-                        <tooltip>
-                            <Tooltip text="Add a new Work Log"/>
-                        </tooltip>
-                        <graphic>
-                            <ImageView fitHeight="15" fitWidth="15">
-                                <Image url="https://img.icons8.com/ios/50/000000/create-new.png"/>
-                            </ImageView>
-                        </graphic>
-                    </Button>
-                </HBox>
-            </ToolBar>
+            <MenuBar>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New Log" onAction="#showNewItemDialog"/>
+                        <MenuItem text="Exit" onAction="#exitApp"/>
+                    </items>
+                </Menu>
+            </MenuBar>
+
         </VBox>
     </top>
     <center>
@@ -47,7 +34,18 @@
     </center>
     <bottom>
         <VBox>
-            
+            <ToolBar>
+                <Button onAction="#showNewItemDialog">
+                    <tooltip>
+                        <Tooltip text="Add a new Work Log"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="10" fitWidth="10">
+                            <Image url="https://img.icons8.com/ios/50/000000/create-new.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </ToolBar>
         </VBox>
     </bottom>
 </BorderPane>

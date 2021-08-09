@@ -24,20 +24,7 @@
                     </items>
                 </Menu>
             </MenuBar>
-            <ToolBar>
-                <HBox>
-                    <Button onAction="#showNewItemDialog">
-                        <tooltip>
-                            <Tooltip text="Add a new Work Log"/>
-                        </tooltip>
-                        <graphic>
-                            <ImageView>
-                                <Image url="@/toolbarButtonGraphics/general/New24.gif"/>
-                            </ImageView>
-                        </graphic>
-                    </Button>
-                </HBox>
-            </ToolBar>
+
         </VBox>
     </top>
     <center>
@@ -47,7 +34,18 @@
     </center>
     <bottom>
         <VBox>
-            
+            <ToolBar>
+                <Button onAction="#showNewItemDialog">
+                    <tooltip>
+                        <Tooltip text="Add a new Work Log"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="10" fitWidth="10">
+                            <Image url="https://img.icons8.com/ios/50/000000/create-new.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </ToolBar>
         </VBox>
     </bottom>
 </BorderPane>
