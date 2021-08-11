@@ -14,6 +14,7 @@
 <?import javafx.scene.image.Image?>
 <BorderPane fx:id="mainBorderPane" fx:controller="com.noga.worklog.Controller"
             xmlns:fx="http://javafx.com/fxml">
+
     <top>
         <VBox>
             <MenuBar>
@@ -40,8 +41,20 @@
                         <Tooltip text="Add a new Work Log"/>
                     </tooltip>
                     <graphic>
-                        <ImageView fitHeight="10" fitWidth="10">
-                            <Image url="https://img.icons8.com/ios/50/000000/create-new.png"/>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="https://img.icons8.com/ios-filled/50/000000/add-property.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button onAction="#exitApp">
+                    <tooltip>
+                        <Tooltip text="Exit"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <Image url="https://img.icons8.com/windows/32/000000/exit.png"/>
                         </ImageView>
                     </graphic>
                 </Button>

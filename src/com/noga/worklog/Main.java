@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,6 +17,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("mainwindow.fxml"));
         primaryStage.setTitle("Work Log");
         primaryStage.setScene(new Scene(root, 550, 350));
+        Image icon = new Image(getClass().getResourceAsStream("/images/icons8-clock-51.png"));
+        primaryStage.getIcons().add(icon);
         primaryStage.show();
 
     }
